@@ -9,6 +9,50 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/*--flex box--*/
+.holdingcontainer{
+  max-width: 100%;
+  display: flex;
+  background: #e0fae6;
+  padding: 50px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.internalcontainerL{
+  flex: 1;
+  background: rgb(133, 255, 214);
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin: 3px;
+}
+
+.internalcontainerM{
+  flex: 1;
+  background: rgb(255, 214, 221);
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin: 3px;
+}
+
+.internalcontainerR{
+  flex: 1;
+  background: rgb(133, 248, 248);
+  padding: 30px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  margin: 3px;
+}
+
+@media screen and (max-width: 768px){
+  .holdingcontainer{
+    flex-direction: column-reverse;
+  }
+}
+
 body {
   background-color: #fff;
   color: #333;
@@ -310,9 +354,9 @@ span {
 #main h2{
   font-family: "Philosopher", sans-serif;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 #vote-submit{
@@ -331,7 +375,7 @@ span {
   color: #71c55d;
   text-decoration: none;
   margin-top: 30px;
-  margin-left: 45%;
+  
 }
 
 
