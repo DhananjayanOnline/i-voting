@@ -307,6 +307,14 @@ span {
   
 }
 
+#main h2{
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
 #vote-submit{
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
