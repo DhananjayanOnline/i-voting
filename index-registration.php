@@ -28,7 +28,7 @@
                     <img src="images-registration/signup-img.jpg" alt="">
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" action="index-login.html" id="register-form">
+                    <form method="POST" class="register-form" action="user-registration.php" id="register-form">
                         <h2>Voting registration form</h2>
                         <div class="form-row">
                             <div class="form-group">
@@ -36,8 +36,8 @@
                                 <input type="text" name="name" id="name" required/>
                             </div>
                             <div class="form-group">
-                                <label for="father_name">Phone :</label>
-                                <input type="number" name="father_name" id="father_name" required/>
+                                <label for="phone">Phone :</label>
+                                <input type="number" name="phone" id="phone" required/>
                             </div>
                         </div>
                         <div class="form-group">
@@ -45,7 +45,7 @@
                             <input type="text" name="address" id="address" required/>
                         </div>
                         <div class="form-radio">
-                            <label for="gender" class="radio-label">Gender :</label>
+                            <label for="gender" name="gender" class="radio-label">Gender :</label>
                             <div class="form-radio-item">
                                 <input type="radio" name="gender" id="male">
                                 <label for="male">Male</label>
@@ -102,16 +102,16 @@
                         </div>
                         <div class="form-group">
                             <label for="birth_date">DOB :</label>
-                            <input type="text" name="birth_date" id="birth_date">
+                            <input type="date" name="birth_date" id="birth_date">
                         </div>
                         <div class="form-group">
                             <label for="pincode">UPRN :</label>
-                            <input type="number" name="pincode" id="pincode">
+                            <input type="number" name="uprn" id="uprn">
                         </div>
                         <div class="form-group">
-                            <label for="course">Course :</label>
+                            <label for="course">Program :</label>
                             <div class="form-select">
-                                <input type="text" name="course" id="course">
+                                <input type="text" name="program" id="program">
                             </div>
                         </div>
                         <div class="form-group">

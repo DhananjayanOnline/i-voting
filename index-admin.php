@@ -51,6 +51,16 @@
 </head>
 
 <body>
+
+<?php
+
+  session_start();
+  if(!isset($_SESSION['email'])){
+  header('location:login-admin.php');
+  }
+
+?>
+
   <!-- container section start -->
   <section id="container" class="">
 
@@ -61,7 +71,7 @@
         <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="glyphicon glyphicon-align-justify"></i></div>
       </div>
       <!--logo start-->
-      <a href="index.html" class="logo">i - <span class="lite">Voting</span></a>
+      <a href="index.php" class="logo">i - <span class="lite">Voting</span></a>
       <!--logo end-->
 
       <div class="nav search-row" id="top_menu">
@@ -73,23 +83,23 @@
         <ul class="nav pull-right top-menu">
 
           
-          <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="profile-ava">
-                                <img style="width: 10%; margin-left: 60%;" alt="" src="img-admin/admin logo.png">
-                            </span>
-                            <span class="username">Admin 1</span>
-                            <b class="caret"></b>
-                        </a>
-            <ul class="dropdown-menu extended logout">
-              <div class="log-arrow-up"></div>
-
-              <li>
-                <a href="login-admin.html"> Log Out</a>
-              </li>
-              
-            </ul>
-          </li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                              <span class="profile-ava">
+                                  <img style="width: 10%; margin-left: 60%;" alt="" src="img-admin/admin logo.png">
+                              </span>
+                              <span class="username">Admin 1</span>
+                              <b class="caret"></b>
+                          </a>
+              <ul class="dropdown-menu extended logout">
+                
+  
+                <li>
+                  <a href="admin-logout.php"> Log Out</a>
+                </li>
+                
+              </ul>
+            </li>
           <!-- user login dropdown end -->
         </ul>
         <!-- notificatoin dropdown end-->
@@ -103,13 +113,18 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu">
           <li class="active">
-            <a class="" href="index-admin.html">
+            <a class="" href="index-admin.php">
                           <span>Dashboard</span>
                       </a>
           </li>
           <li class="active">
-            <a class="" href="nom_request.html">
+            <a class="" href="nom_request.php">
                           <span>Nomination Request</span>
+                      </a>
+          </li>
+          <li class="active">
+            <a class="" href="registration-admin.php">
+                          <span>Registration</span>
                       </a>
           </li>
         </ul>

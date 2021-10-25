@@ -41,18 +41,18 @@
         <div class="container">
 
         <div id="logo" class="pull-left">
-            <h1><a href="index.html"><span>i-</span>Voting</a></h1>
+            <h1><a href="index.php"><span>i-</span>Voting</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
         </div>
 
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-            <li class="menu-active"><a href="index.html">Home</a></li>
-            <li><a href="index-nomination.html">Nomination</a></li>
-            <li><a href="list-candidate.html">Candidate List</a></li>
-            <li><a href="Result.html">View Result</a></li>
-            <li><a href="login-admin.html">Admin Login</a></li>
+            <li class="menu-active"><a href="index.php">Home</a></li>
+            <li><a href="index-nomination.php">Nomination</a></li>
+            <li><a href="list-candidate.php">Candidate List</a></li>
+            <li><a href="Result.php">View Result</a></li>
+            <li><a href="login-admin.php">Admin Login</a></li>
             </ul>
         </nav><!-- #nav-menu-container -->
         </div>

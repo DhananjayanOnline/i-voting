@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Result</title>
+  <title>Thank you</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -36,42 +36,44 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+    <!-- ======= Header ======= -->
   <header id="header" class="header">
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html"><span>i-</span>Voting</a></h1>
+        <h1><a href="index.php"><span>i-</span>Voting</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="index.html">Home</a></li>
-        <li><a href="index-nomination.html">Nomination</a></li>
-        <li><a href="list-candidate.html">Candidate List</a></li>
-        <li><a href="Result.html">View Result</a></li>
-        <li><a href="login-admin.html">Admin Login</a></li>
+        <li class="menu-active"><a href="index.php">Home</a></li>
+        <li><a href="index-nomination.php">Nomination</a></li>
+        <li><a href="list-candidate.php">Candidate List</a></li>
+        <li><a href="Result.php">View Result</a></li>
+        <li><a href="login-admin.php">Admin Login</a></li>
         </ul>
     </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- End Header -->
 
+
   <main id="main">
     
-    
-
     <!-- ======= Get Started Section ======= -->
     <section id="get-started" class="padd-section text-center">
-      <br><br>
-      <h1 style="text-align: center;" ><span>Result</span></h1>
+        <br><br>
+        <h1 style="text-align: center;" ><span>Thank You</span></h1>      
       <div class="container">
         <div class="row">
 
-          <h2>No Result Found</h2>
+            
+          <h2>Your Vote is recorded..</h2>
+          
           
         </div>
+        <br><br><br><br><br><br><br><br><br>
       </div>
 
     </section><!-- End Get Started Section -->

@@ -7,7 +7,7 @@
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
   <meta name="author" content="GeeksLabs">
   <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-  <link rel="shortcut icon" href="img-adminx/favicon.png">
+  <link rel="shortcut icon" href="img-admin/favicon.png">
 
   <title>Admin Dashboard</title>
 
@@ -38,6 +38,10 @@
   <link href="css-admin/style-responsive.css" rel="stylesheet" />
   <link href="css-admin/xcharts.min.css" rel=" stylesheet">
   <link href="css-admin/jquery-ui-1.10.4.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- =======================================================
     Theme Name: NiceAdmin
     Theme URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -47,15 +51,41 @@
 </head>
 
 <body>
+
+<?php
+
+  session_start();
+  if(!isset($_SESSION['email'])){
+    header('location:login-admin.php');
+  }
+
+?>
+
+               
+<?php
+
+if(isset($_POST['verify'])){
+    $_SESSION["uprn"]=$_POST["chk"];
+    //$st="select * from candidate_registration where UPRN='{$_SESSION['uprn']}'";
+    //if($con->query($st))
+    //{
+    header('location:update.php');
+    //}
+}
+
+?>
     <!-- container section start -->
     <section id="container" class="">
   
   
       <header class="header dark-bg">
         
+      <div class="toggle-nav">
+        <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i class="glyphicon glyphicon-align-justify"></i></div>
+      </div>
   
         <!--logo start-->
-        <a href="index-admin.html" class="logo">i-vs <span class="lite">Admin</span></a>
+        <a href="index.php" class="logo">i-vs <span class="lite">Admin</span></a>
         <!--logo end-->
   
         <div class="nav search-row" id="top_menu">
@@ -76,10 +106,10 @@
                               <b class="caret"></b>
                           </a>
               <ul class="dropdown-menu extended logout">
-                <div class="log-arrow-up"></div>
+                
   
                 <li>
-                  <a href="login-admin.html"> Log Out</a>
+                  <a href="admin-logout.php"> Log Out</a>
                 </li>
                 
               </ul>
@@ -97,15 +127,20 @@
           <!-- sidebar menu start-->
           <ul class="sidebar-menu">
             <li class="active">
-              <a class="" href="index-admin.html">
+              <a class="" href="index-admin.php">
                             <span>Dashboard</span>
                         </a>
             </li>
             <li class="active">
-                <a class="" href="nom_request.html">
+                <a class="" href="nom_request.php">
                               <span>Nomination Request</span>
                           </a>
             </li>
+            <li class="active">
+            <a class="" href="registration-admin.php">
+                          <span>Registration</span>
+                      </a>
+          </li>
           </ul>
           <!-- sidebar menu end-->
         </div>
@@ -141,8 +176,9 @@
                       </div>
                     </div>
                     <div class="panel-body">
-                      <table class="table bootstrap-datatable countries">
-                        <thead>
+                     
+                    <table class="table bootstrap-datatable countries">
+                    <thead>
                           <tr>
                             <th></th>
                             <th>Candidate Name</th>
@@ -151,57 +187,50 @@
                             <th></th>
                           </tr>
                         </thead>
+                      <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'no'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
                         <tbody>
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                            <td>Dhananjayan H</td>
-                            <td>BCA</td>
-                            <td>3rd Year</td>
-                            
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>
+                            <td><?php echo $ro["DEPARTMENT"]; ?></td>
+                            <td><?php echo $ro["DOB"]; ?></td>
+                            <td><input type="checkbox" name="chk" value="<?php echo $ro['UPRN']; ?>"></td>
                             <td style="text-align: right;">
-                                <button class="button button1">Accept</button>
-                                <button class="button button3">Reject</button>
+                                <button class="button button1" type="submit" name="verify">Accept</button>
+                                
                             </td>
                           </tr>
-                          <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                            <td>Cyriac</td>
-                            <td>BCA</td>
-                            <td>3rd Year</td>
-                            
-                            <td style="text-align: right;">
-                                <button class="button button1">Accept</button>
-                                <button class="button button3">Reject</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                            <td>Devika Mohandas</td>
-                            <td>Physics</td>
-                            <td>2nd Year</td>
-                            
-                            <td style="text-align: right;">
-                                <button class="button button1">Accept</button>
-                                <button class="button button3">Reject</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                            <td>Indu S</td>
-                            <td>Ziology</td>
-                            <td>1st Year</td>
-                            
-                            <td style="text-align: right;">
-                                <button class="button button1">Accept</button>
-                                <button class="button button3">Reject</button>
-                            </td>
-                          </tr>
-                          
-                          
-                          
-                          
-                        </tbody>
+                          </tbody>
+                          </form>
+
+                         <?php 
+                         }
+                        }
+                        else{
+                          echo "No Entry";
+                        }
+
+
+                      ?>
+                    
                       </table>
+                        
+         
+
                     </div>
       
                   </div>

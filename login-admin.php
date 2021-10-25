@@ -45,25 +45,24 @@
 
   <div class="container">
 
-    <form class="login-form" action="index-admin.html">
+    <form class="login-form" action="admin-validation.php" style="margin-top: 100px"; method="post">
       <div class="login-wrap">
         <h2 style="margin-left: 27%;">Admin Login</h2>
         <br>
         <br>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_profile"></i></span>
-          <input type="text" class="form-control" placeholder="Username" autofocus>
+          <input type="email" class="form-control" placeholder="Email ID" name="email" autofocus>
         </div>
         <div class="input-group">
           <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" name="password">
         </div>
         <label class="checkbox">
                 <input type="checkbox" value="remember-me"> Remember me
                 <span class="pull-right"> <a href="#"> Forgot Password?</a></span>
             </label>
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
-        <button class="btn btn-info btn-lg btn-block" type="submit">Signup</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit" name="signin">Login</button>
       </div>
     </form>
     <div class="text-right">

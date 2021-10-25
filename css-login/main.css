@@ -244,9 +244,9 @@ iframe {
 
 .label-input100 {
   font-family: OpenSans-Bold;
-  font-size: 15px;
+  font-size: 12px;
   color: #555555;
-  line-height: 1.2;
+  line-height: .1;
 
   display: block;
   position: absolute;
@@ -254,7 +254,7 @@ iframe {
   width: 100%;
   padding-left: 30px;
   left: 0;
-  top: 28px;
+  top: 18px;
 
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;

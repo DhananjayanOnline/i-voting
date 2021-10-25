@@ -41,18 +41,18 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="index.html"><span>i-</span>Voting</a></h1>
+        <h1><a href="index.php"><span>i-</span>Voting</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-        <li class="menu-active"><a href="index.html">Home</a></li>
-        <li><a href="index-nomination.html">Nomination</a></li>
-        <li><a href="list-candidate.html">Candidate List</a></li>
-        <li><a href="Result.html">View Result</a></li>
-        <li><a href="login-admin.html">Admin Login</a></li>
+        <li class="menu-active"><a href="index.php">Home</a></li>
+        <li><a href="index-nomination.php">Nomination</a></li>
+        <li><a href="list-candidate.php">Candidate List</a></li>
+        <li><a href="Result.php">View Result</a></li>
+        <li><a href="login-admin.php">Admin Login</a></li>
         </ul>
     </nav><!-- #nav-menu-container -->
     </div>
@@ -63,7 +63,7 @@
     <div class="hero-container" data-aos="fade-in">
       <h1 style="margin-top: 60px; font-size: xx-large;">Welcome to i-Voting</h1>
       <img src="assets/img/Voting-hero1.jpg" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
-      <a href="index-login.html" class="btn-get-started scrollto">Get Started</a>
+      <a href="index-login.php" class="btn-get-started scrollto">Get Started</a>
       <!--
       <div class="btns">
         <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>

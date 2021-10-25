@@ -15,12 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="fonts-nomination/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="css-nomination/style.css"/>
+
 </head>
 <body>
 	<div class="page-content">
 		<div class="form-v1-content">
 			<div class="wizard-form">
-		        <form class="form-register" action="#" method="post">
+		        <form class="form-register" action="nomination-registration.php" method="post" enctype="multipart/form-data">
 		        	<div id="form-total">
 		        		<!-- SECTION 1 -->
 			            <h2>
@@ -36,14 +37,14 @@
 								<div class="form-row">
 									<div class="form-holder">
 										<fieldset>
-											<legend>First Name</legend>
-											<input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" required>
+											<legend>Full Name</legend>
+											<input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
 										</fieldset>
 									</div>
 									<div class="form-holder">
 										<fieldset>
-											<legend>Last Name</legend>
-											<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name" required>
+											<legend>UPRN</legend>
+											<input type="number" class="form-control" id="uprn" name="uprn" placeholder="UPRN" required>
 										</fieldset>
 									</div>
 								</div>
@@ -51,7 +52,7 @@
 									<div class="form-holder form-holder-2">
 										<fieldset>
 											<legend>Your Email</legend>
-											<input type="text" name="your_email" id="your_email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="example@email.com" required>
+											<input type="text" name="email" id="your_email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="example@email.com" required>
 										</fieldset>
 									</div>
 								</div>
@@ -65,78 +66,34 @@
 								</div>
 								<div class="form-row form-row-date">
 									<div class="form-holder form-holder-2">
-										<legend class="special-label">Birth Date:</legend>
-										<select name="month" id="month">
-											<option value="MM" disabled selected>MM</option>
-											<option value="16">16</option>
-											<option value="17">17</option>
-											<option value="18">18</option>
-											<option value="19">19</option>
-										</select>
-										<select name="date" id="date">
-											<option value="DD" disabled selected>DD</option>
-											<option value="Jan">Jan</option>
-											<option value="Feb">Feb</option>
-											<option value="Mar">Mar</option>
-											<option value="Apr">Apr</option>
-											<option value="May">May</option>
-											<option value="Jun">Jun</option>
-											<option value="Jul">Jul</option>
-											<option value="Aug">Aug</option>
-											<option value="Sep">Sep</option>
-											<option value="Oct">Oct</option>
-											<option value="Nov">Nov</option>
-											<option value="Dec">Dec</option>
-										</select>
-										<select name="year" id="year">
-											<option value="YYYY" disabled selected>YYYY</option>
-											<option value="2021">2021</option>
-											<option value="2020">2020</option>
-											<option value="2019">2019</option>
-											<option value="2018">2018</option>
-											<option value="2017">2017</option>
-											<option value="2016">2016</option>
-											<option value="2015">2015</option>
-											<option value="2014">2014</option>
-											<option value="2013">2013</option>
-											<option value="2012">2012</option>
-											<option value="2011">2011</option>
-											<option value="2010">2010</option>
-											<option value="2009">2009</option>
-											<option value="2008">2008</option>
-											<option value="2007">2007</option>
-											<option value="2006">2006</option>
-											<option value="2005">2005</option>
-											<option value="2004">2004</option>
-											<option value="2003">2003</option>
-											<option value="2002">2002</option>
-											<option value="2001">2001</option>
-											<option value="2000">2000</option>
-											<option value="1999">1999</option>
-											<option value="1998">1998</option>
-											<option value="1997">1997</option>
-											<option value="1996">1996</option>
-											<option value="1995">1995</option>
-											<option value="1994">1994</option>
-											<option value="1992">1993</option>
-										</select>
+									<fieldset>
+											<legend>Date of Birth</legend>
+											<input type="date" class="form-control" id="dob" name="dob" placeholder="yyyy-mm-dd" required>
+									</fieldset>
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="form-holder form-holder-2">
-										<input type="text" class="form-control input-border" id="dept" name=dept"" placeholder="Department" required>
+										<input type="text" class="form-control input-border" id="dept" name="dept" placeholder="Department" required>
 									</div>
 									<div class="form-holder form-holder-2">
-										<input type="number" class="form-control input-border" id="year" name="year" placeholder="Year" required>
-									</div>
-									<div class="form-holder form-holder-2">
-										<input type="number" class="form-control input-border" id="uprn" name="uprn" placeholder="UPRN" required>
+										<input type="number" class="form-control input-border" id="year" name="sem" placeholder="Semester" required>
 									</div>
 								</div>
-								<form action="/action_page.php">
-									<input type="file" id="myFile" name="filename">
-									<input type="submit">
-								  </form>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<input type="number" class="form-control input-border" id="dept" name="attendence" placeholder="Percentage of Attendence">
+									</div>
+									<div class="form-holder form-holder-2">
+										<input type="number" class="form-control input-border" id="year" name="admission" placeholder="Year of Admission" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<input type="number" class="form-control input-border" id="intermediate" name="intermediate" placeholder="Year of Passing Intermediate or +2" required>
+									</div>
+								</div>
+								
 							</div>
 							
 			            </section>
@@ -177,21 +134,49 @@
 			            </section>
 			            <!-- SECTION 3 -->
 			            <h2>
-			            	<p class="step-icon"><span>03</span></p>
+			            	<p class="step-icon"><span>02</span></p>
 			            	<span class="step-text">Nominee Biography Statement</span>
 			            </h2>
 			            <section>
-			                <div class="inner">
-			                	<div class="wizard-header">
-									<h3 class="heading">Nominee Biography Statement</h3>
-									<p>Please provide a biography statement to discribe yourself (Nominee)</p>
+							<div class="inner">
+								<div class="wizard-header">
+									<div class="form-row">
+											<label class="form-holder form-holder-2" for="failedexam" style="font-size:small; font-weight:bolder; color: #737273;">Have you ever failed in any examination conducted by CMS College?</label>
+											<input type="radio" class="form-control input-border" id="yes" value='yes' name="failed"  required>Yes
+											<input type="radio" class="form-control input-border" id="no" value='no' name="failed"  required>No
+										</div>
+										<div class="form-row">
+											<label class="form-holder form-holder-2" for="failedexam" style="font-size:small; font-weight:bolder; color: #737273;"> Have you ever appeared or required to appear in Back/Supplementary Examination?</label>
+											<input type="radio" class="form-control input-border" id="yes" value='yes' name="supply"  required>Yes
+											<input type="radio" class="form-control input-border" id="no" value='no' name="supply"  required>No
+										</div>
+										<div class="form-row">
+											<label class="form-holder form-holder-2" for="desciplinary" style="font-size:small; font-weight:bolder; color: #737273;"> Has any disciplinary action been taken against you leading to your expulsion/rustication from any of the educational institution attended?</label>
+											<input type="radio" class="form-control input-border" id="yes" value='yes' name="disciplinary"  required>Yes
+											<input type="radio" class="form-control input-border" id="no" value='no' name="disciplinary"  required>No
+										</div>
+										<div class="form-row">
+											<label class="form-holder form-holder-2" for="criminal" style="font-size:small; font-weight:bolder; color: #737273;"> Have you ever been convicted by any criminal court?</label>
+											<input type="radio" class="form-control input-border" id="yes" value='yes' name="criminal"  required>Yes
+											<input type="radio" class="form-control input-border" id="no" value='no' name="criminal"  required>No
+										</div>									
+										<br>
+										<div class="form-row">
+											
+											<div class="form-holder form-holder-2">
+												<fieldset>
+													<legend>Upload Photo</legend>
+													<input type="file"  id="photo" name="photo">
+												</fieldset>
+											</div>
+														
+											<div id="">
+												<br>
+												<input name="sub" type="submit">
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="form-row">
-			                		<form action="">
-										<input style="width: 400px; height: 400px;" type="text" id="text" name="vehicle1" value="">
-										
-									</form>
-			                	</div>
 							</div>
 			            </section>
 		        	</div>
@@ -202,5 +187,6 @@
 	<script src="js-nomination/jquery-3.3.1.min.js"></script>
 	<script src="js-nomination/jquery.steps.js"></script>
 	<script src="js-nomination/main.js"></script>
+	
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
