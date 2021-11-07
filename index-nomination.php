@@ -74,7 +74,26 @@
 								</div>
 								<div class="form-row">
 									<div class="form-holder form-holder-2">
-										<input type="text" class="form-control input-border" id="dept" name="dept" placeholder="Department" required>
+										<legend>Department</legend>
+										<select class="form-control input-border" id="dept" name="dept" placeholder="Department" required>
+											<option value="BA English">BA English</option>
+											<option value="BA History">BA History</option>
+											<option value="BA Malayalam">BA Malayalam</option>
+											<option value="BA Economics">BA Economics</option>
+											<option value="BA English Triple Main">BA English Triple Main (Self Financing)</option>
+											<option value="B.Sc Physics">B.Sc Physics</option>
+											<option value="B.Sc Chemistry">B.Sc Chemistry</option>
+											<option value="B.Sc Botony">B.Sc Botony</option>
+											<option value="B.Sc Zoology">B.Sc Zoology</option>
+											<option value="B.Sc Mathematics">B.Sc Mathematics</option>
+											<option value="B.Sc Family and Community Science">B.Sc Family and Community Science</option>
+											<option value="B.Sc Botony and Biotechnology">B.Sc Botony and Biotechnology (Self Financing)</option>
+											<option value="B.com Finance and Taxation">B.com Finance and Taxation</option>
+											<option value="B.com Finance and Taxation">B.com Finance and Taxation (Self Financing)</option>
+											<option value="B.Voc Information Technology">B.Voc Information Technology</option>
+											<option value="B.Voc Travel,Tourism and Logistics Management">B.Voc Travel,Tourism and Logistics Management</option>
+											<option value="BCA">BCA (Self Financing)</option>
+										</select>
 									</div>
 									<div class="form-holder form-holder-2">
 										<input type="number" class="form-control input-border" id="year" name="sem" placeholder="Semester" required>

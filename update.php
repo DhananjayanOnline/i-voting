@@ -11,7 +11,7 @@
 
     if(isset($_POST["but1"]))
     {
-        $s="update candidate_registration set verify='yes' where UPRN='{$_SESSION['uprn']}' ";
+        $s="update candidate_registration set verify='yes' where C_UPRN='{$_SESSION['uprn']}' ";
         if($con->query($s))
         {
             header('location:nom_request.php');

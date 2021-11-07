@@ -26,7 +26,7 @@ if(isset($_POST['sub']))
     $criminal= $_POST['criminal'];
     //$photo= $_POST['photo'];
 
-    $s = "select * from candidate_registration where UPRN = '$uprn'";
+    $s = "select * from candidate_registration where C_UPRN = '$uprn'";
 
     $result = mysqli_query($con, $s);
 
@@ -35,7 +35,7 @@ if(isset($_POST['sub']))
     if($num == 1){
         echo "UPRN already taken";
     }else{
-        $reg= "insert into candidate_registration (`UPRN`,`NAME`,`PHONENUMBER`,`DOB`,`DEPARTMENT`,`SEMESTER`,`PERCENTAGEOFATTENDENCE`,`YEAROFADMISSION`,`YEAROFPASSINGINTERMEDIATE`,`FAILEDEXAM`,`SUPPLEMENTARYEXAM`,`DISCIPLINARYACTION`,`CRIMINALCASE` ) 
+        $reg= "insert into candidate_registration (`C_UPRN`,`NAME`,`PHONENUMBER`,`DOB`,`DEPARTMENT`,`SEMESTER`,`PERCENTAGEOFATTENDENCE`,`YEAROFADMISSION`,`YEAROFPASSINGINTERMEDIATE`,`FAILEDEXAM`,`SUPPLEMENTARYEXAM`,`DISCIPLINARYACTION`,`CRIMINALCASE` ) 
         values ('$uprn','$name','$phone','$dob','$dept','$sem','$attendence','$admission','$intermediate','$failed','$supply','$disciplinary','$criminal')" ;
 
         //mysqli_query($con, $reg);

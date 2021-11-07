@@ -31,7 +31,7 @@ $num= mysqli_num_rows($result);
 if($num == 1){
     echo "Email already taken";
 }else{
-    $reg= "insert into votter_registration (`UPRN`, `NAME`, `PHONE`, `ADDRESS`,	`GENDER`, `STATE`, `CITY`, `DOB`, `COURSE`, `EMAILID`, `PASSWORD`) values ('$uprn','$name','$phone','$address','$gender','$state','$city','$dob','$program','$email','$password')" ;
+    $reg= "insert into votter_registration (`VT_UPRN`, `NAME`, `PHONE`, `ADDRESS`,	`GENDER`, `STATE`, `CITY`, `DOB`, `COURSE`, `EMAILID`, `PASSWORD`) values ('$uprn','$name','$phone','$address','$gender','$state','$city','$dob','$program','$email','$password')" ;
 
     mysqli_query($con, $reg);
     echo"Registration Successful";

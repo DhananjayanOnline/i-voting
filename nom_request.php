@@ -208,7 +208,7 @@ if(isset($_POST['verify'])){
                             <td><?php echo $ro["NAME"]; ?></td>
                             <td><?php echo $ro["DEPARTMENT"]; ?></td>
                             <td><?php echo $ro["DOB"]; ?></td>
-                            <td><input type="checkbox" name="chk" value="<?php echo $ro['UPRN']; ?>"></td>
+                            <td><input type="checkbox" name="chk" value="<?php echo $ro['C_UPRN']; ?>"></td>
                             <td style="text-align: right;">
                                 <button class="button button1" type="submit" name="verify">Accept</button>
                                 
@@ -218,14 +218,14 @@ if(isset($_POST['verify'])){
                           </form>
 
                          <?php 
-                         }
-                        }
-                        else{
-                          echo "No Entry";
-                        }
+                          }
+                          }
+                          else{
+                            echo "No Entry";
+                          }
 
 
-                      ?>
+                        ?>
                     
                       </table>
                         

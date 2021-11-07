@@ -77,32 +77,41 @@
                         <th style="text-align: right;">Department</th>
                       </tr>
                     </thead>
-                    <tbody style="color: darkslateblue;">
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Dhananjayan H</td>
-                        <td>3rd year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Cyiac</td>
-                        <td>3rd Year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Indu S</td>
-                        <td>2nd Year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Tony pater</td>
-                        <td>1st Year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                    </tbody>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["SEMESTER"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
                   </table>
             </div>
 
@@ -117,32 +126,41 @@
                         <th style="text-align: right;">Department</th>
                       </tr>
                     </thead>
-                    <tbody style="color: darkslateblue;">
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Dhananjayan H</td>
-                        <td>3rd year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Cyiac</td>
-                        <td>3rd Year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Indu S</td>
-                        <td>2nd Year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                      <tr>
-                        <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" style="height:58px; margin-top:-2px;"></td>
-                        <td>Tony pater</td>
-                        <td>1st Year</td>
-                        <td style="text-align: right;">BCA</td>
-                      </tr>
-                    </tbody>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'Bsc Physics'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["SEMESTER"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
                   </table>
             </div>
 
