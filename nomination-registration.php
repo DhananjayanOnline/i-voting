@@ -15,7 +15,7 @@ if(isset($_POST['sub']))
     $name= $_POST['name'];
     $phone= $_POST['phone'];
     $dept= $_POST['dept'];
-    $sem= $_POST['sem'];
+    $year= $_POST['year'];
     $admission= $_POST['admission'];
     $attendence= $_POST['attendence'];
     $dob= $_POST['dob'];
@@ -35,8 +35,8 @@ if(isset($_POST['sub']))
     if($num == 1){
         echo "UPRN already taken";
     }else{
-        $reg= "insert into candidate_registration (`C_UPRN`,`NAME`,`PHONENUMBER`,`DOB`,`DEPARTMENT`,`SEMESTER`,`PERCENTAGEOFATTENDENCE`,`YEAROFADMISSION`,`YEAROFPASSINGINTERMEDIATE`,`FAILEDEXAM`,`SUPPLEMENTARYEXAM`,`DISCIPLINARYACTION`,`CRIMINALCASE` ) 
-        values ('$uprn','$name','$phone','$dob','$dept','$sem','$attendence','$admission','$intermediate','$failed','$supply','$disciplinary','$criminal')" ;
+        $reg= "insert into candidate_registration (`C_UPRN`,`NAME`,`PHONENUMBER`,`DOB`,`DEPARTMENT`,`CURRENT_YEAR`,`PERCENTAGEOFATTENDENCE`,`YEAROFADMISSION`,`YEAROFPASSINGINTERMEDIATE`,`FAILEDEXAM`,`SUPPLEMENTARYEXAM`,`DISCIPLINARYACTION`,`CRIMINALCASE` ) 
+        values ('$uprn','$name','$phone','$dob','$dept','$year','$attendence','$admission','$intermediate','$failed','$supply','$disciplinary','$criminal')" ;
 
         //mysqli_query($con, $reg);
         if($con->query($reg))

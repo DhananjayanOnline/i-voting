@@ -89,14 +89,19 @@
 											<option value="B.Sc Family and Community Science">B.Sc Family and Community Science</option>
 											<option value="B.Sc Botony and Biotechnology">B.Sc Botony and Biotechnology (Self Financing)</option>
 											<option value="B.com Finance and Taxation">B.com Finance and Taxation</option>
-											<option value="B.com Finance and Taxation">B.com Finance and Taxation (Self Financing)</option>
+											<option value="B.com Finance and Taxation (Self Financing)">B.com Finance and Taxation (Self Financing)</option>
 											<option value="B.Voc Information Technology">B.Voc Information Technology</option>
 											<option value="B.Voc Travel,Tourism and Logistics Management">B.Voc Travel,Tourism and Logistics Management</option>
 											<option value="BCA">BCA (Self Financing)</option>
 										</select>
 									</div>
 									<div class="form-holder form-holder-2">
-										<input type="number" class="form-control input-border" id="year" name="sem" placeholder="Semester" required>
+										<legend>Year</legend>
+										<select type="number" class="form-control input-border" id="year" name="year" placeholder="Semester" required>
+											<option value="1">First Year</option>
+											<option value="2">Second Year</option>
+											<option value="3">Third Year</option>
+										</select>
 									</div>
 								</div>
 								<div class="form-row">
