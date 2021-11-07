@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
@@ -175,25 +183,25 @@ if(isset($_POST['verify'])){
                         <a href="index-admin.html" class="btn-close"></a>
                       </div>
                     </div>
-                    <div class="panel-body">
+                    <div class="table-responsive">
                      
-                    <table class="table bootstrap-datatable countries">
+                    <table class="table" style="height:50px;width:50px">
                     <thead>
                           <tr>
                             <th></th>
-                            <th>Candidate Name</th>
-                            <th>Department</th>
-                            <th>DOB</th>
-                            <th>Phone</th>
-                            <th>Year</th>
-                            <th>Attendence Percentage</th>
-                            <th>Year of Admission</th>
-                            <th>Year of Passing Intermediate</th>
-                            <th>Exam Failed</th>
-                            <th>Supplementary Exam</th>
-                            <th>Any Disciplinary Action</th>
-                            <th>Any Criminal Case</th>
-                            <th></th>
+                            <th style="height:50px;width:50px">Candidate Name</th>
+                            <th style="height:50px;width:50px">Department</th>
+                            <th style="height:50px;width:50px">DOB</th>
+                            <th style="height:50px;width:50px">Phone</th>
+                            <th style="height:50px;width:50px">Year</th>
+                            <th style="height:50px;width:50px">Attendence Percentage</th>
+                            <th style="height:50px;width:50px">Year of Admission</th>
+                            <th style="height:50px;width:50px">Year of Passing Intermediate</th>
+                            <th style="height:50px;width:50px">Exam Failed</th>
+                            <th style="height:50px;width:50px">Supplementary Exam</th>
+                            <th style="height:50px;width:50px">Any Disciplinary Action</th>
+                            <th style="height:50px;width:50px">Any Criminal Case</th>
+                            <th style="height:50px;width:50px"></th>
                           </tr>
                         </thead>
                       <?php

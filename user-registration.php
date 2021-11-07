@@ -20,6 +20,7 @@ $uprn= $_POST['uprn'];
 $program= $_POST['program'];
 $email= $_POST['email'];
 $password= $_POST['password'];
+$cpassword= $_POST['cpassword'];
 
 
 $s = "select * from votter_registration where EMAILID = '$email'";
@@ -31,7 +32,7 @@ $num= mysqli_num_rows($result);
 if($num == 1){
     echo "Email already taken";
 }else{
-    $reg= "insert into votter_registration (`VT_UPRN`, `NAME`, `PHONE`, `ADDRESS`,	`GENDER`, `STATE`, `CITY`, `DOB`, `COURSE`, `EMAILID`, `PASSWORD`) values ('$uprn','$name','$phone','$address','$gender','$state','$city','$dob','$program','$email','$password')" ;
+    $reg= "insert into votter_registration (`VT_UPRN`, `NAME`, `PHONE`, `ADDRESS`,	`GENDER`, `STATE`, `CITY`, `DOB`, `COURSE`, `EMAILID`, `PASSWORD`, `CONFIRM_PASSWORD`) values ('$uprn','$name','$phone','$address','$gender','$state','$city','$dob','$program','$email','$password','$cpassword')" ;
 
     mysqli_query($con, $reg);
     echo"Registration Successful";

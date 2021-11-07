@@ -121,41 +121,8 @@
 							</div>
 							
 			            </section>
-						<!-- SECTION 2 -
-			            <h2>
-			            	<p class="step-icon"><span>02</span></p>
-			            	<span class="step-text">Select Your Position</span>
-			            </h2>
-			            <section>
-			                <div class="inner">
-			                	<div class="wizard-header">
-									<h3 class="heading">Check one position</h3>
-									
-								</div>
-								<div class="form-row">
-									<hr size="" width="100%" color=""> 
-								</div>
-								<form style="padding-top: 10%;" action="/action_page.php">
-									<div  style="float: left;">
-										<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-										<label for="vehicle1"> I have a bike</label><br>
-										<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-										<label for="vehicle2"> I have a car</label><br>
-										<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-										<label for="vehicle3"> I have a boat</label><br><br>
-									</div>
-									<div style="float: left; margin-left: 80px;">
-										<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-										<label for="vehicle1"> I have a bike</label><br>
-										<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-										<label for="vehicle2"> I have a car</label><br>
-										<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-										<label for="vehicle3"> I have a boat</label><br><br>
-										<input type="submit" value="Submit">
-									</div>
-								  </form>
-							</div>
-			            </section>
+						
+						
 			            <!-- SECTION 3 -->
 			            <h2>
 			            	<p class="step-icon"><span>02</span></p>
