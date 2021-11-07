@@ -183,7 +183,16 @@ if(isset($_POST['verify'])){
                             <th></th>
                             <th>Candidate Name</th>
                             <th>Department</th>
+                            <th>DOB</th>
+                            <th>Phone</th>
                             <th>Year</th>
+                            <th>Attendence Percentage</th>
+                            <th>Year of Admission</th>
+                            <th>Year of Passing Intermediate</th>
+                            <th>Exam Failed</th>
+                            <th>Supplementary Exam</th>
+                            <th>Any Disciplinary Action</th>
+                            <th>Any Criminal Case</th>
                             <th></th>
                           </tr>
                         </thead>
@@ -208,14 +217,22 @@ if(isset($_POST['verify'])){
                             <td><?php echo $ro["NAME"]; ?></td>
                             <td><?php echo $ro["DEPARTMENT"]; ?></td>
                             <td><?php echo $ro["DOB"]; ?></td>
+                            <td><?php echo $ro["PHONENUMBER"]; ?></td>
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td><?php echo $ro["PERCENTAGEOFATTENDENCE"]; ?></td>
+                            <td><?php echo $ro["YEAROFADMISSION"]; ?></td>
+                            <td><?php echo $ro["YEAROFPASSINGINTERMEDIATE"]; ?></td>
+                            <td><?php echo $ro["FAILEDEXAM"]; ?></td>
+                            <td><?php echo $ro["SUPPLEMENTARYEXAM"]; ?></td>
+                            <td><?php echo $ro["DISCIPLINARYACTION"]; ?></td>
+                            <td><?php echo $ro["CRIMINALCASE"]; ?></td>                            
                             <td><input type="checkbox" name="chk" value="<?php echo $ro['C_UPRN']; ?>"></td>
                             <td style="text-align: right;">
-                                <button class="button button1" type="submit" name="verify">Accept</button>
-                                
+                                <button class="button button1" type="submit" name="verify">Accept</button>                                
                             </td>
                           </tr>
                           </tbody>
-                          </form>
+                    </form>
 
                          <?php 
                           }

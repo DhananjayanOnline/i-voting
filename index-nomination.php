@@ -98,9 +98,9 @@
 									<div class="form-holder form-holder-2">
 										<legend>Year</legend>
 										<select type="number" class="form-control input-border" id="year" name="year" placeholder="Semester" required>
-											<option value="1">First Year</option>
-											<option value="2">Second Year</option>
-											<option value="3">Third Year</option>
+											<option value="First Year">First Year</option>
+											<option value="Second Year">Second Year</option>
+											<option value="Third Year">Third Year</option>
 										</select>
 									</div>
 								</div>
