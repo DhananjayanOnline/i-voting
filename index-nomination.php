@@ -84,7 +84,7 @@
 											<option value="B.Sc Physics">B.Sc Physics</option>
 											<option value="B.Sc Chemistry">B.Sc Chemistry</option>
 											<option value="B.Sc Botony">B.Sc Botony</option>
-											<option value="B.Sc Zoology">B.Sc Zoology</option>
+											<option value="B.Sc Zoology">B.Sc Botony</option>
 											<option value="B.Sc Mathematics">B.Sc Mathematics</option>
 											<option value="B.Sc Family and Community Science">B.Sc Family and Community Science</option>
 											<option value="B.Sc Botony and Biotechnology">B.Sc Botony and Biotechnology (Self Financing)</option>

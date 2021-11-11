@@ -97,26 +97,7 @@
             <input onclick="this.value='Voted'" class="btn btn-success" type="button" value="Vote" id="myButton1" />
           </div>
         </div>
-        
-        <!--
-        <div class="internalcontainerM" data-aos="zoom-in" data-aos-delay="200"><img class="dasimages" src="https://www.dailyexcelsior.com/wp-content/uploads/2021/02/freepressjournal_import_2018_06_Amazon-CEO-Jeff-Bezos.jpg" width="100%"/>
-          <div class="card-body">
-            <p class="card-text"><h3>Jeff Bezos</h3></p>
-            <p class="card-text">CEO Blue Origin</p>
-            <input onclick="this.value='Voted'" class="btn btn-success" type="button" value="Vote" id="myButton1" />
-          </div>
-        </div>
-  
-        <div class="internalcontainerR" data-aos="zoom-in" data-aos-delay="200"><img class="dasimages" src="assets/img/candidates/003.jpg" width="100%"/>
-          <div class="card-body">
-            <p class="card-text"><h3>Richard Branson</h3></p>
-            <p class="card-text">CEO Virgin Galactic</p>
-            <input onclick="this.value='Voted'" class="btn btn-success" type="button" value="Vote" id="myButton1" />
-          </div>
-        </div>
-      </div>
-       -->
-
+    
       <?php 
                           }
                           }

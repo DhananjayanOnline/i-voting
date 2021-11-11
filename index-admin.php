@@ -174,137 +174,886 @@
               </div>
               <div class="panel-body">
                 <table class="table bootstrap-datatable countries">
-                  <thead>
-                    <tr>
+                <h4>BA English</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
                       
-                      <th>Name of the Candidate</th>
-                      <th>Department</th>
-                      <th>Number of Votes</th>
-                      <th>Performance</th>
-                    </tr>
-                  </thead>
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
                   <tbody>
-                    <tr> 
-                      <td>Cyriac</td>
-                      <td>BCA</td>
-                      <td>1025</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100" style="width: 73%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="27" aria-valuemin="0" aria-valuemax="100" style="width: 27%">
-                          </div>
-                        </div>
-                        <span class="sr-only">73%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Dhananjayan H</td>
-                      <td>BCA</td>
-                      <td>2563</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100" style="width: 43%">
-                          </div>
-                        </div>
-                        <span class="sr-only">57%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Akshay Kumar</td>
-                      <td>BCA</td>
-                      <td>452</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" style="width: 93%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%">
-                          </div>
-                        </div>
-                        <span class="sr-only">93%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Siddarth U</td>
-                      <td>Economics</td>
-                      <td>958</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Ajmal Salim</td>
-                      <td>Physics</td>
-                      <td>3621</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Anandhu Anil</td>
-                      <td>Chamistry</td>
-                      <td>102</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Arjun Krishna</td>
-                      <td>Mathematics</td>
-                      <td>102</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      
-                      <td>Rehan Santhosh</td>
-                      <td>BCA</td>
-                      <td>102</td>
-                      <td>
-                        <div class="progress thin">
-                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                          </div>
-                          <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                          </div>
-                        </div>
-                        <span class="sr-only">20%</span>
-                      </td>
-                    </tr>
-                  </tbody>
+              
                 </table>
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>BA History</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>BA Malayalam</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Malayalam'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>BA Economics</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>BA English Triple Main (Self Financing)</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Physics</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Chemistry</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Botony</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Zoology</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Mathematics</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Family and Community Science</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Sc Botony and Biotechnology (Self Financing)</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.com Finance and Taxation</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.com Finance and Taxation (Self Financing)</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Voc Information Technology</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>B.Voc Travel,Tourism and Logistics Management</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
+
+                <table class="table bootstrap-datatable countries">
+                  <br>
+                <h4>BCA (Self Financing)</h4>
+                <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Department</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                        <form action="" method="post">
+                        <tbody style="color: darkslateblue;">            
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
+                            <td></td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                  
+                  <tbody>
+              
+                </table>
+
               </div>
 
             </div>
