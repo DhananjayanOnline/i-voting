@@ -77,14 +77,28 @@
       <br>
 
       <div class="holdingcontainer">
+      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = '{$_SESSION["dept"]}'  and CURRENT_YEAR = '{$_SESSION["year"]}'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
         <div class="internalcontainerL" data-aos="zoom-in" data-aos-delay="200"><img class="dasimages" src="assets/img/candidates/001.jpg" width="100%"/>
           <div class="card-body">
-            <p class="card-text"><h3>Elon Musk</h3></p>
+            <p class="card-text"><h3><?php echo $ro["NAME"]; ?></h3></p>
             <p class="card-text">CEO Tesla, SpaceX</p>
             <input onclick="this.value='Voted'" class="btn btn-success" type="button" value="Vote" id="myButton1" />
           </div>
         </div>
-  
+        
+        <!--
         <div class="internalcontainerM" data-aos="zoom-in" data-aos-delay="200"><img class="dasimages" src="https://www.dailyexcelsior.com/wp-content/uploads/2021/02/freepressjournal_import_2018_06_Amazon-CEO-Jeff-Bezos.jpg" width="100%"/>
           <div class="card-body">
             <p class="card-text"><h3>Jeff Bezos</h3></p>
@@ -101,20 +115,34 @@
           </div>
         </div>
       </div>
+       -->
+
+      <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
 
 
-      <div id="vote-submit">
-        <a href="" class="btn-get-started scrollto">Submit</a>
-      </div>
+                        ?>
 
-      <div id="vote-submit">
-        <a href="logout.php" class="btn-get-started scrollto">Logout</a>
-      </div>
+
+      
 
     </section><!-- End Get Started Section -->
    </main><!-- End #main -->
+    <section>
+      <center>
+      <div id="vote-submit">
+            <a href="" class="btn-get-started scrollto">Submit</a>
+          </div>
 
-   
+          <div id="vote-submit">
+            <a href="logout.php" class="btn-get-started scrollto">Logout</a>
+        </div>
+      </center>
+    </section>
 
   <!-- ======= Footer ======= -->
   <footer class="footer">

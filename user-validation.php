@@ -24,6 +24,8 @@ $res=$con->query($s);
 	{
 		$ro=$res->fetch_assoc();
 		$_SESSION["email"]=$ro["EMAILID"];
+		$_SESSION["dept"]=$ro["COURSE"];
+		$_SESSION["year"]=$ro["YEAR"];
 		
 		echo "<script>window.open('vote.php','_self')</script>";
 	}

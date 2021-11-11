@@ -18,6 +18,7 @@ $city= $_POST['city'];
 $dob= $_POST['birth_date'];
 $uprn= $_POST['uprn'];
 $program= $_POST['program'];
+$year= $_POST['year'];
 $email= $_POST['email'];
 $password= $_POST['password'];
 $cpassword= $_POST['cpassword'];
@@ -32,7 +33,7 @@ $num= mysqli_num_rows($result);
 if($num == 1){
     echo "Email already taken";
 }else{
-    $reg= "insert into votter_registration (`VT_UPRN`, `NAME`, `PHONE`, `ADDRESS`,	`GENDER`, `STATE`, `CITY`, `DOB`, `COURSE`, `EMAILID`, `PASSWORD`, `CONFIRM_PASSWORD`) values ('$uprn','$name','$phone','$address','$gender','$state','$city','$dob','$program','$email','$password','$cpassword')" ;
+    $reg= "insert into votter_registration (`VT_UPRN`, `NAME`, `PHONE`, `ADDRESS`,	`GENDER`, `STATE`, `CITY`, `DOB`, `COURSE`,`YEAR`, `EMAILID`, `PASSWORD`, `CONFIRM_PASSWORD`) values ('$uprn','$name','$phone','$address','$gender','$state','$city','$dob','$program','$year','$email','$password','$cpassword')" ;
 
     mysqli_query($con, $reg);
     echo"Registration Successful";
