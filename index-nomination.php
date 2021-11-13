@@ -16,6 +16,25 @@
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="css-nomination/style.css"/>
 
+
+	<style>
+      input[type=submit] {
+        background-color: #4fab40;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+	input[type=submit] {
+	color: #fff;
+	text-decoration: none;
+    padding: 13px 19px;
+	}
+    </style>
+
 </head>
 <body>
 	<div class="page-content">
@@ -157,13 +176,14 @@
 											<div class="form-holder form-holder-2">
 												<fieldset>
 													<legend>Upload Photo</legend>
+													<p style="text-align:left">Image size 600px,600px</p>
 													<input type="file"  id="photo" name="photo">
 												</fieldset>
 											</div>
 														
 											<div id="">
 												<br>
-												<input name="sub" type="submit">
+												<input  name="sub" type="submit">
 											</div>
 										</div>
 									</div>

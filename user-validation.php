@@ -31,13 +31,13 @@ $res=$con->query($s);
 			echo "<script>window.open('vote.php','_self')</script>";
 		}
 		else{
-			echo "already voted";
+			echo "<CENTER><H3> already voted </H3></CENTER>";
 		
 		}
 	}
 	else
 	{
-		echo "INVALID USERNAME or PASSWORD";
+		echo '<CENTER><H3> INVALID USERNAME or PASSWORD </H3></CENTER>';
 	}
 }
 
