@@ -59,23 +59,2127 @@
   </header><!-- End Header -->
 
   <main id="main">
-    
-    
+        
+        <h1 style="text-align: center;" ><span>Result</h1>
 
-    <!-- ======= Get Started Section ======= -->
-    <section id="get-started" class="padd-section text-center">
-      <br><br>
-      <h1 style="text-align: center;" ><span>Result</span></h1>
-      <div class="container">
-        <div class="row">
+        <section id="get-started" class="padd-section ">
 
-          <h2>No Result Found</h2>
-          
-        </div>
-      </div>
+            <h1 style="text-align: center;" ><span>Result</h1>
+            <div class="container">
+                <h2>BA English</h2>
+                
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
 
-    </section><!-- End Get Started Section -->
-   </main><!-- End #main -->
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status ,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+            </div>
+
+            <div class="container">
+                <h2>BA History</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+            </div>
+
+            <div class="container">
+                <h2>BA Economics</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+            </div>
+
+            <div class="container">
+                <h2>BA English Triple Main (Self Financing)</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+            </div>
+
+            <div class="container">
+                <h2>B.Sc Physics</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+            </div>
+
+            <div class="container">
+                <h2>B.Sc Chemistry</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Sc Botony</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                 
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Sc Zoology</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Sc Mathematics</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Sc Family and Community Science</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Sc Botony and Biotechnology (Self Financing)</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.com Finance and Taxation</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.com Finance and Taxation (Self Financing)</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Voc Information Technology</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>B.Voc Travel,Tourism and Logistics Management</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+             <div class="container">
+                <h2>BCA (Self Financing)</h2>
+                <table class="table bootstrap-datatable countries" style="font-family: monospace; color:darkslategray">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Name of the Candidate</th>
+                        <th>Year</th>
+                        <th style="text-align: right;">Votes</th>
+                      </tr>
+                    </thead>
+
+                    <!--First Year-->
+                    <?php
+                      
+                        $con = mysqli_connect('localhost','root','123456');
+
+                         mysqli_select_db($con, 'ivs_data_base');
+
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'first year'";
+                        $res=$con->query($s);
+                        if($res->num_rows>0)
+                        {
+                          while($ro=$res->fetch_assoc())
+                          { ?>
+
+                       
+                    <form action="" method="post">
+                        <tbody style="color: darkslateblue;">
+                          <tr>
+                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><?php echo $ro["NAME"]; ?></td>      
+                            <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                            <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                            </td>
+                          </tr>
+                        </tbody>
+                    </form>
+
+                         <?php 
+                          }
+                          }
+                          else{
+                            echo "<CENTER><H4> No Entry </H4></CENTER>";
+                          }
+
+
+                        ?>
+                        <!--end of First Year-->
+
+                        
+                        <!--Second Year-->
+                        <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'second year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Second Year-->
+
+
+                      <!--Third Year-->
+                      <?php
+                      
+                      $con = mysqli_connect('localhost','root','123456');
+
+                       mysqli_select_db($con, 'ivs_data_base');
+
+                      $s = "select MAX(STATUS) AS max_status ,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'third year'";
+                      $res=$con->query($s);
+                      if($res->num_rows>0)
+                      {
+                        while($ro=$res->fetch_assoc())
+                        { ?>
+
+                     
+                  <form action="" method="post">
+                      <tbody style="color: darkslateblue;">
+                        <tr>
+                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><?php echo $ro["NAME"]; ?></td>      
+                          <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
+                          <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
+                          </td>
+                        </tr>
+                      </tbody>
+                  </form>
+
+                       <?php 
+                        }
+                        }
+                        else{
+                          echo "<CENTER><H4> No Entry </H4></CENTER>";
+                        }
+
+
+                      ?>
+                      <!--end of Third Year-->
+
+
+                  </table>
+             </div>
+
+        </section>
+    </main><!-- End #main -->
 
   
 

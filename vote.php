@@ -76,6 +76,7 @@
       <br>
       <br>
 
+      
       <div class="holdingcontainer">
       <?php
                       
@@ -90,11 +91,17 @@
                         while($ro=$res->fetch_assoc())
                         { ?>
 
-        <div class="internalcontainerL" data-aos="zoom-in" data-aos-delay="200"><img class="dasimages" src="assets/img/candidates/001.jpg" width="100%"/>
+        <div class="internalcontainerL" data-aos="zoom-in" data-aos-delay="200">
+          <img class="dasimages" src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" width="100%">
           <div class="card-body">
             <p class="card-text"><h3><?php echo $ro["NAME"]; ?></h3></p>
             <p class="card-text">CEO Tesla, SpaceX</p>
-            <input onclick="this.value='Voted'" class="btn btn-success" type="button" value="Vote" id="myButton1" />
+            <form action="vote-status.php" method="POST">
+              <input type="hidden" value="<?php echo $ro['C_UPRN']; ?>" name="cand">
+              <input type="hidden" value="<?php echo $_SESSION['email']; ?>" name="chk">
+              <input onclick="this.value='Voted'" class="btn btn-success" type="submit" value="Vote" name="vote" id="myButton1" />
+              
+            </form>
           </div>
         </div>
     
@@ -115,10 +122,6 @@
    </main><!-- End #main -->
     <section>
       <center>
-      <div id="vote-submit">
-            <a href="" class="btn-get-started scrollto">Submit</a>
-          </div>
-
           <div id="vote-submit">
             <a href="logout.php" class="btn-get-started scrollto">Logout</a>
         </div>

@@ -190,7 +190,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -204,7 +204,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -241,7 +241,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -255,7 +255,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -293,7 +293,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Malayalam'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Malayalam' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -307,7 +307,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -345,7 +345,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -359,7 +359,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -397,7 +397,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -411,7 +411,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -449,7 +449,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -463,7 +463,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -501,7 +501,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -515,7 +515,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -553,7 +553,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -567,7 +567,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -605,7 +605,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -619,7 +619,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -657,7 +657,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -671,7 +671,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -709,7 +709,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' ORDER BY STATUS DESC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -723,7 +723,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -761,7 +761,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -775,7 +775,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -813,7 +813,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -827,7 +827,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -865,7 +865,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -879,7 +879,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -917,7 +917,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -931,7 +931,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -969,7 +969,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -983,7 +983,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>
@@ -1021,7 +1021,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA'";
+                        $s = "select * from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' ORDER BY CURRENT_YEAR ASC";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1035,7 +1035,7 @@
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
-                            <td></td>
+                            <td style="text-align: right;"><?php echo $ro["STATUS"]; ?></td>
                           </tr>
                         </tbody>
                     </form>

@@ -24,6 +24,8 @@ if(isset($_POST['sub']))
     $supply= $_POST['supply'];
     $disciplinary= $_POST['disciplinary'];
     $criminal= $_POST['criminal'];
+    $image= $_FILES['photo']['name'];
+    $tmp_name= $_FILES['photo']['tmp_name'];
     //$photo= $_POST['photo'];
 
     $s = "select * from candidate_registration where C_UPRN = '$uprn'";
@@ -35,8 +37,9 @@ if(isset($_POST['sub']))
     if($num == 1){
         echo "UPRN already taken";
     }else{
-        $reg= "insert into candidate_registration (`C_UPRN`,`NAME`,`PHONENUMBER`,`DOB`,`DEPARTMENT`,`CURRENT_YEAR`,`PERCENTAGEOFATTENDENCE`,`YEAROFADMISSION`,`YEAROFPASSINGINTERMEDIATE`,`FAILEDEXAM`,`SUPPLEMENTARYEXAM`,`DISCIPLINARYACTION`,`CRIMINALCASE` ) 
-        values ('$uprn','$name','$phone','$dob','$dept','$year','$attendence','$admission','$intermediate','$failed','$supply','$disciplinary','$criminal')" ;
+        move_uploaded_file($tmp_name, "assets/img/candidates/$image");
+        $reg= "insert into candidate_registration (`C_UPRN`,`NAME`,`PHONENUMBER`,`DOB`,`DEPARTMENT`,`CURRENT_YEAR`,`PERCENTAGEOFATTENDENCE`,`YEAROFADMISSION`,`YEAROFPASSINGINTERMEDIATE`,`FAILEDEXAM`,`SUPPLEMENTARYEXAM`,`DISCIPLINARYACTION`,`CRIMINALCASE`,`PHOTO`) 
+        values ('$uprn','$name','$phone','$dob','$dept','$year','$attendence','$admission','$intermediate','$failed','$supply','$disciplinary','$criminal','$image')" ;
 
         //mysqli_query($con, $reg);
         if($con->query($reg))

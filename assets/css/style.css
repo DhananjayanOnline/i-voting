@@ -14,7 +14,7 @@
 .holdingcontainer{
   max-width: 100%;
   display: flex;
-  background: #e0fae6;
+  background: #d8f3ff;
   padding: 50px;
   box-sizing: border-box;
   flex-direction: row;
@@ -22,7 +22,7 @@
 
 .internalcontainerL{
   flex: 1;
-  background: rgb(133, 255, 214);
+  background: #ffeced;
   padding: 30px;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
@@ -85,7 +85,7 @@ h5 {
 a {
   letter-spacing: 2px;
   text-decoration: none;
-  color: #71c55d;
+  color: #004b88;
 }
 
 a:hover {
@@ -154,7 +154,7 @@ span {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #71c55d;
+  background: #004b88;
   line-height: 1;
   color: #fff;
   padding: 7px 12px 13px 12px;
@@ -172,13 +172,13 @@ span {
 }
 
 .back-to-top:focus {
-  background: #71c55d;
+  background: #004b88;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #55b03f;
+  background: #004b88;
   color: #fff;
 }
 
@@ -217,7 +217,7 @@ span {
 }
 
 #header #logo h1 a span {
-  color: #71c55d;
+  color: #004b88;
 }
 
 #header #logo img {
@@ -237,7 +237,7 @@ span {
 #hero {
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(../img/hero-bg.png) center bottom no-repeat;
+  background: url(../img/hero1-bg.png) center bottom no-repeat;
   background-size: 100%;
   position: relative;
   margin-top: 40px;
@@ -268,7 +268,7 @@ span {
   font-weight: 700;
   line-height: 56px;
   font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  color: #004b88;
 }
 
 @media (max-width: 768px) {
@@ -296,7 +296,7 @@ span {
 
 #hero img {
   max-width: 95%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #hero .btn-get-started {
@@ -309,15 +309,15 @@ span {
   padding: 11px 36px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-bottom: 30px;
-  border: 2px solid #71c55d;
+  margin-bottom: 43px;
+  border: 2px solid #004b88;
   background: #fff;
-  color: #71c55d;
+  color: #004b88;
   text-decoration: none;
 }
 
 #hero .btn-get-started:hover {
-  background: #71c55d;
+  background: #d83536;
   color: #fff;
 }
 
@@ -347,7 +347,7 @@ span {
   font-weight: 700;
   line-height: 56px;
   font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  color: #004b88;
   
 }
 
@@ -370,9 +370,9 @@ span {
   border-radius: 50px;
   transition: 0.5s;
   margin-bottom: 30px;
-  border: 2px solid #71c55d;
+  border: 2px solid #004b88;
   background: #fff;
-  color: #71c55d;
+  color: #004b88;
   text-decoration: none;
   margin-top: 30px;
   
@@ -466,7 +466,7 @@ span {
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #71c55d;
+  color: #004b88;
 }
 
 .nav-menu > li {
@@ -494,7 +494,7 @@ span {
 }
 
 .nav-menu ul li:hover > a {
-  color: #71c55d;
+  color: #004b88;
 }
 
 .nav-menu ul ul {
@@ -583,11 +583,11 @@ span {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #71c55d;
+  color: #004b88;
 }
 
 #mobile-nav ul .menu-active a {
-  color: #71c55d;
+  color: #004b88;
 }
 
 #mobile-body-overly {
@@ -778,7 +778,7 @@ section {
 }
 
 #get-started .feature-block a:hover {
-  color: #71c55d;
+  color: #004b88;
 }
 
 /* About Us Section
@@ -869,7 +869,7 @@ section {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #71c55d;
+  background: #004b88;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -894,7 +894,7 @@ section {
 #video .overlay .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#71c55d 50%, rgba(113, 197, 93, 0.15) 52%);
+  background: radial-gradient(#004b88 50%, rgba(113, 197, 93, 0.15) 52%);
   border-radius: 50%;
   display: block;
   margin: 153px auto 0;
@@ -941,7 +941,7 @@ section {
 }
 
 #video .overlay .play-btn:hover::after {
-  border-left: 15px solid #71c55d;
+  border-left: 15px solid #004b88;
   transform: scale(20);
 }
 
@@ -1048,7 +1048,7 @@ section {
 }
 
 #team .team-block .team-content ul li a .fa:hover {
-  color: #71c55d;
+  color: #004b88;
 }
 
 #team .team-block .team-content ul > span {
@@ -1073,7 +1073,7 @@ section {
 }
 
 #testimonials .testimonials-content::before {
-  color: #71c55d;
+  color: #004b88;
   content: "";
   display: inline-block;
   font: 70px/1 FontAwesome;
@@ -1117,7 +1117,7 @@ section {
 }
 
 #testimonials .btm-btm .active {
-  background: #71c55d;
+  background: #004b88;
 }
 
 .carousel-indicators {
@@ -1189,7 +1189,7 @@ section {
 }
 
 #pricing .block-pricing .table .table_btn a {
-  background: #71c55d;
+  background: #004b88;
   color: #fff;
   margin: 0;
   display: inline-block;

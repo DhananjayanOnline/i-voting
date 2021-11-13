@@ -61,8 +61,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="flip-in">
-      <h1 style="margin-top: 60px; font-size: xx-large;">Welcome to i-Voting</h1>
-      <img src="assets/img/Voting-hero1.jpg" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+      <h1 style="margin-top: 65px; font-size: xx-large;">Welcome to i-Voting</h1>
+      <img src="assets/img/Voting-hero3.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
       <a href="index-login.php" class="btn-get-started scrollto">Get Started</a>
       <!--
       <div class="btns">

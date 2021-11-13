@@ -26,8 +26,14 @@ $res=$con->query($s);
 		$_SESSION["email"]=$ro["EMAILID"];
 		$_SESSION["dept"]=$ro["COURSE"];
 		$_SESSION["year"]=$ro["YEAR"];
+		if($ro["VOTE"]==0)
+		{
+			echo "<script>window.open('vote.php','_self')</script>";
+		}
+		else{
+			echo "already voted";
 		
-		echo "<script>window.open('vote.php','_self')</script>";
+		}
 	}
 	else
 	{
