@@ -37,7 +37,7 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
-                    <img src="images-registration/signup-img1.png" alt="">
+                    <img src="images-registration/signup-img2.png" alt="">
                 </div>
                 <div class="signup-form">
                     <form method="POST" class="register-form" action="user-registration.php" id="register-form">

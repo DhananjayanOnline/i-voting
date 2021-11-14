@@ -149,32 +149,85 @@
         <div class="col-md-12 col-lg-4">
           <div class="footer-logo">
 
-            <a style="margin-bottom: 50px;" class="navbar-brand" href="#">Internet Voting System</a>
-            
+            <a class="navbar-brand" href="#">i-Voting System</a>
+            <p>An Internet voting system (i-Voting) is a web based system that allows 
+              groups to securely conduct votes and elections. With i-Voting technology, votes are 
+              collected, counted and managed in an automated fashion</p>
+            <a class="navbar-brand" href="https://cmscollege.ac.in/"><h4 style="color:white";>CMS College Kottayam <br><h5 style="color:white";>(AUTONOMOUS)</h5></h4></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>ACADEMICS</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/syllabus.html">Curriculum</a></li>
+              <li><a href="http://cmscollege.ac.in/examination.html">Examinations</a></li>
+              <li><a href="http://cmscollege.ac.in/all-departments-list.html">All Departments</a></li>
+              <li><a href="https://services.cmscollege.ac.in/Feedback/Feedback/Home">Faculty Evaluation</a></li>
+            </ul>
 
           </div>
         </div>
 
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>ADMISSIONS</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/notification-2.html">Notifications</a></li>
+              <li><a href="https://cmscollege.ac.in/programs-offered.html">Programs Offered</a></li>
+              <li><a href="http://cmscollege.ac.in/online-admission.html">UG Online Admission</a></li>
+              <li><a href="http://cmscollege.ac.in/pg-admission.html">PG Online Admission</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>FUTURE STUDENTS</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/doctoral-programs.html">Doctoral Programs</a></li>
+              <li><a href="https://cmscollege.ac.in/post-graduate-programs.html">Postgraduate Programs</a></li>
+              <li><a href="http://cmscollege.ac.in/ug-programmes-offered.html">Undergraduate Programmes</a></li>              
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>CAMPUS LIFE</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/complaints-and-grievances.html">Complaints and Grievances</a></li>
+              <li><a href="https://cmscollege.ac.in/students-support-cms.html">Students Support @CMS</a></li>
+              <li><a href="http://cmscollege.ac.in/right-to-information-rti.html">Right to Information (RTI)</a></li>
+              <li><a href="https://cmscollege.ac.in/campus-placements.html">Campus Placements</a></li>
+              <li><a href="http://cmscollege.ac.in/anti-ragging-cell.html">Anti Ragging Cell</a></li>
+            </ul>
+
+          </div>
+        </div>
 
       </div>
     </div>
 
-    <!--
     <div class="copyrights">
       <div class="container">
-        <p>&copy; Copyrights eStartup. All rights reserved.</p>
+        <p>&copy; Copyrights Internet Voting System. All rights reserved.</p>
         <div class="credits">
-          
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
-        
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by Dhananajayan H
         </div>
       </div>
     </div>
-    -->
 
   </footer><!-- End  Footer -->
 

@@ -64,90 +64,8 @@
       <h1 style="margin-top: 65px; font-size: xx-large;">Welcome to i-Voting</h1>
       <img src="assets/img/Voting-hero3.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
       <a href="index-login.php" class="btn-get-started scrollto">Cast Your Vote</a>
-      <!--
-      <div class="btns">
-        <a href="#"><i class="fa fa-apple fa-3x"></i> App Store</a>
-        <a href="#"><i class="fa fa-play fa-3x"></i> Google Play</a>
-        <a href="#"><i class="fa fa-windows fa-3x"></i> windows</a>
-      </div>
-    -->
     </div>
   </section><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= Contact Section ======= 
-    <section id="contact" class="padd-section">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-title text-center">
-          <h2>Feedback</h2>
-        </div>
-
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-3 col-md-4">
-
-            <div class="info">
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p>CMS College Kottayam<br>Kottayam,686001 </p>
-              </div>
-
-              <div class="email">
-                <i class="fa fa-envelope"></i>
-                <p>Office@cmscollege.ac.in</p>
-              </div>
-
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>0481 256 6002</p>
-              </div>
-            </div>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer class="footer">
@@ -157,37 +75,90 @@
         <div class="col-md-12 col-lg-4">
           <div class="footer-logo">
 
-            <a style="margin-bottom: 50px;" class="navbar-brand" href="#">Internet Voting System</a>
-            
+            <a class="navbar-brand" href="#">i-Voting System</a>
+            <p>An Internet voting system (i-Voting) is a web based system that allows 
+              groups to securely conduct votes and elections. With i-Voting technology, votes are 
+              collected, counted and managed in an automated fashion</p>
+            <a class="navbar-brand" href="https://cmscollege.ac.in/"><h4 style="color:white";>CMS College Kottayam <br><h5 style="color:white";>(AUTONOMOUS)</h5></h4></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>ACADEMICS</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/syllabus.html">Curriculum</a></li>
+              <li><a href="http://cmscollege.ac.in/examination.html">Examinations</a></li>
+              <li><a href="http://cmscollege.ac.in/all-departments-list.html">All Departments</a></li>
+              <li><a href="https://services.cmscollege.ac.in/Feedback/Feedback/Home">Faculty Evaluation</a></li>
+            </ul>
 
           </div>
         </div>
 
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>ADMISSIONS</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/notification-2.html">Notifications</a></li>
+              <li><a href="https://cmscollege.ac.in/programs-offered.html">Programs Offered</a></li>
+              <li><a href="http://cmscollege.ac.in/online-admission.html">UG Online Admission</a></li>
+              <li><a href="http://cmscollege.ac.in/pg-admission.html">PG Online Admission</a></li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>FUTURE STUDENTS</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/doctoral-programs.html">Doctoral Programs</a></li>
+              <li><a href="https://cmscollege.ac.in/post-graduate-programs.html">Postgraduate Programs</a></li>
+              <li><a href="http://cmscollege.ac.in/ug-programmes-offered.html">Undergraduate Programmes</a></li>              
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3 col-lg-2">
+          <div class="list-menu">
+
+            <h4>CAMPUS LIFE</h4>
+
+            <ul class="list-unstyled">
+              <li><a href="https://cmscollege.ac.in/complaints-and-grievances.html">Complaints and Grievances</a></li>
+              <li><a href="https://cmscollege.ac.in/students-support-cms.html">Students Support @CMS</a></li>
+              <li><a href="http://cmscollege.ac.in/right-to-information-rti.html">Right to Information (RTI)</a></li>
+              <li><a href="https://cmscollege.ac.in/campus-placements.html">Campus Placements</a></li>
+              <li><a href="http://cmscollege.ac.in/anti-ragging-cell.html">Anti Ragging Cell</a></li>
+            </ul>
+
+          </div>
+        </div>
 
       </div>
     </div>
 
-    <!--
     <div class="copyrights">
       <div class="container">
-        <p>&copy; Copyrights eStartup. All rights reserved.</p>
+        <p>&copy; Copyrights Internet Voting System. All rights reserved.</p>
         <div class="credits">
-          
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=eStartup
-        
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by Dhananajayan H
         </div>
       </div>
     </div>
-    -->
 
   </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
