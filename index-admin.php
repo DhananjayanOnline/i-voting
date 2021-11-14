@@ -200,7 +200,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -251,7 +251,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -303,7 +303,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -355,7 +355,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -407,7 +407,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -459,7 +459,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -511,7 +511,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -563,7 +563,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -615,7 +615,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -667,7 +667,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -719,7 +719,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -771,7 +771,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -823,7 +823,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -875,7 +875,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -927,7 +927,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -979,7 +979,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                
@@ -1031,7 +1031,7 @@
                         <form action="" method="post">
                         <tbody style="color: darkslateblue;">            
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["DEPARTMENT"]; ?></td>                                                

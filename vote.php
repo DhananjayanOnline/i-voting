@@ -32,6 +32,18 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style>
+    #myButton1{
+      background-color: #004b88;
+    }
+
+    #myButton1 :hover {
+		  color: #e51e26;
+		}
+    
+  </style>
+
 </head>
 
 <body>
@@ -94,13 +106,14 @@
         <div class="internalcontainerL" data-aos="zoom-in" data-aos-delay="200">
           <img class="dasimages" src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" width="100%">
           <div class="card-body">
-            <p class="card-text"><h3><?php echo $ro["NAME"]; ?></h3></p>
-            <p class="card-text">CEO Tesla, SpaceX</p>
+            <p class="card-text"><h4><?php echo $ro["NAME"]; ?></h4></p>
+            <p class="card-text"></p>
+            <hr>
             <form action="vote-status.php" method="POST">
               <input type="hidden" value="<?php echo $ro['C_UPRN']; ?>" name="cand">
               <input type="hidden" value="<?php echo $_SESSION['email']; ?>" name="chk">
               <input onclick="this.value='Voted'" class="btn btn-success" type="submit" value="Vote" name="vote" id="myButton1" />
-              
+            <hr>
             </form>
           </div>
         </div>

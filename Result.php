@@ -85,7 +85,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status ,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status ,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -96,7 +96,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -124,7 +124,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -135,7 +135,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -163,7 +163,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -174,7 +174,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -217,7 +217,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -228,7 +228,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -256,7 +256,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -267,7 +267,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -295,7 +295,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA History' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -306,7 +306,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -349,7 +349,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -360,7 +360,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -388,7 +388,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -399,7 +399,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -427,7 +427,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA Economics' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -438,7 +438,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -481,7 +481,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -492,7 +492,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -520,7 +520,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -531,7 +531,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -559,7 +559,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BA English Triple Main' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -570,7 +570,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -613,7 +613,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -624,7 +624,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -652,7 +652,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -663,7 +663,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -691,7 +691,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Physics' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -702,7 +702,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -745,7 +745,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -756,7 +756,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -784,7 +784,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -795,7 +795,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -823,7 +823,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Chemistry' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -834,7 +834,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -877,7 +877,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -888,7 +888,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -916,7 +916,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -927,7 +927,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -955,7 +955,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -966,7 +966,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                 
@@ -1009,7 +1009,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1020,7 +1020,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1048,7 +1048,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1059,7 +1059,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1087,7 +1087,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Zoology' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1098,7 +1098,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1141,7 +1141,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1152,7 +1152,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1180,7 +1180,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1191,7 +1191,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1219,7 +1219,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Mathematics' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1230,7 +1230,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1273,7 +1273,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1284,7 +1284,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1312,7 +1312,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1323,7 +1323,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1351,7 +1351,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Family and Community Science' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1362,7 +1362,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1405,7 +1405,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1416,7 +1416,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1444,7 +1444,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1455,7 +1455,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1483,7 +1483,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Sc Botony and Biotechnology' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1494,7 +1494,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1537,7 +1537,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1548,7 +1548,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1576,7 +1576,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1587,7 +1587,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1615,7 +1615,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1626,7 +1626,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1669,7 +1669,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1680,7 +1680,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1708,7 +1708,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1719,7 +1719,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1747,7 +1747,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.com Finance and Taxation (Self Financing)' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1758,7 +1758,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1801,7 +1801,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1812,7 +1812,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1840,7 +1840,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1851,7 +1851,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1879,7 +1879,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Information Technology' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1890,7 +1890,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1933,7 +1933,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -1944,7 +1944,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -1972,7 +1972,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -1983,7 +1983,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -2011,7 +2011,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'B.Voc Travel,Tourism and Logistics Management' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -2022,7 +2022,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -2065,7 +2065,7 @@
 
                          mysqli_select_db($con, 'ivs_data_base');
 
-                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'first year'";
+                        $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'first year'";
                         $res=$con->query($s);
                         if($res->num_rows>0)
                         {
@@ -2076,7 +2076,7 @@
                     <form action="" method="post">
                         <tbody style="color: darkslateblue;">
                           <tr>
-                            <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                            <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                             <td><?php echo $ro["NAME"]; ?></td>      
                             <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                             <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -2104,7 +2104,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'second year'";
+                      $s = "select MAX(STATUS) AS max_status,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'second year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -2115,7 +2115,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
@@ -2143,7 +2143,7 @@
 
                        mysqli_select_db($con, 'ivs_data_base');
 
-                      $s = "select MAX(STATUS) AS max_status ,NAME,CURRENT_YEAR,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'third year'";
+                      $s = "select MAX(STATUS) AS max_status ,NAME,CURRENT_YEAR,PHOTO,DEPARTMENT from candidate_registration where VERIFY = 'yes' and DEPARTMENT = 'BCA' and CURRENT_YEAR= 'third year'";
                       $res=$con->query($s);
                       if($res->num_rows>0)
                       {
@@ -2154,7 +2154,7 @@
                   <form action="" method="post">
                       <tbody style="color: darkslateblue;">
                         <tr>
-                          <td><img src="https://www.bncollege.co.in/master_cp/upload_users/9274demo-male.png" alt="none" style="height:58px; margin-top:-2px;"></td>
+                          <td><img src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" alt="none" style="height:58px; margin-top:-2px;"></td>
                           <td><?php echo $ro["NAME"]; ?></td>      
                           <td><?php echo $ro["CURRENT_YEAR"]; ?></td>
                           <td style="text-align: right;"><?php echo $ro["max_status"]; ?></td>                                                
