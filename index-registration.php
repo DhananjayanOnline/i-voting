@@ -18,6 +18,18 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="css-registration/style.css">
+
+    <style>
+        h2{
+            color: #004b88;
+        }
+
+        .register-form{
+
+            padding: 50px 100px 50px 20px;
+            paddin-right: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,7 +37,7 @@
         <div class="container">
             <div class="signup-content">
                 <div class="signup-img">
-                    <img src="images-registration/signup-img.jpg" alt="">
+                    <img src="images-registration/signup-img1.png" alt="">
                 </div>
                 <div class="signup-form">
                     <form method="POST" class="register-form" action="user-registration.php" id="register-form">
@@ -174,7 +186,7 @@
                             <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
                             <br>
                             <br>
-                            <a href="index-login.html">Go back to login page</a></p>
+                            <a href="index-login.php">Go back to login page</a></p>
                         </div>
                     </form>
                 </div>
