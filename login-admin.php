@@ -50,6 +50,9 @@
 		font-family: 'Lato', sans-serif;
 	}
 
+	body{
+		padding: 1cm !important;
+	}
 
 
 	/*--------------------------------------------------------------

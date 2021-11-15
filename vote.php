@@ -102,7 +102,19 @@
                       {
                         while($ro=$res->fetch_assoc())
                         { ?>
+        <style>
+           .dasimages {
+            background: #fff none repeat scroll 0 0;
+            padding: 30px 20px;
+            transition: all 0.5s ease-in-out 0s;
 
+          }
+
+          .internalcontainerL:hover {
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+            transition: all 0.5s ease-in-out 0s;
+}
+        </style>
         <div class="internalcontainerL" data-aos="zoom-in" data-aos-delay="200">
           <img class="dasimages" src="assets/img/candidates/<?php echo $ro["PHOTO"]; ?>" width="100%">
           <div class="card-body">
